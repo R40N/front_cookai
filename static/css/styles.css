@@ -160,4 +160,26 @@ body {
     line-height: 22px;
 }
 
+/* backtotop btn */
+.floating-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 99;
+    background-image: url("/static/img/top-button.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 30px; /* 이미지 크기 */
+    height: 30px; /* 이미지 크기 */
+    border-radius: 50%;
+}
 
+.floating-top-btn:hover {
+    background-color: #b5b5b5;
+}

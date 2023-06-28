@@ -9,6 +9,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/navbar.css">
     <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/ai_imgprocess.css">
     <!-- 폰트 임포트 -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
@@ -23,12 +24,25 @@
     <title>Cookai</title>
 </head>
 <body>
-    <h1>탐색 페이지</h1>
-    <p>탐색 페이지 입니다.zzzz</p>
-    <footer></footer>
+    <form id="image-upload-form">
+        <input type="file" id="image-file" name="image-file" accept="image/*" />
+        <button type="submit">Upload Image</button>
+    </form>
+        <div id="result">
+        <!-- 결과 표시 영역 -->
+        </div>
+        <!-- 로딩 스피너 -->
+        <div id="loading" style="display: none;">
+            <div class="spinner">
+                <p>Loading...</p>
+            </div>
+        </div>
+      
 </body>
 <script src="/static/js/api.js"></script>
 <script src="/static/js/common.js"></script>
 <script src="/static/js/index.js"></script>
 <script src="/static/js/mainpage.js"></script>
+<script src="/static/js/scroll.js"></script>
+<script src="/static/js/ai_imgprocess.js"></script>
 </html>
